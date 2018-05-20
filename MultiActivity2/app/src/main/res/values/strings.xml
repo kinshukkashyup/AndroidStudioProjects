@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Multi Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hellow WOrld</string>
+    <string name="edit_message">Enter a Message</string>
+    <string name="Intent1Btn">Send1</string>
+    <string name="Intent2Btn">Send2</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+</resources>

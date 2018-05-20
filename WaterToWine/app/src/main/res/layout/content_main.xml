@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kingbradley.watertowine.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LiquidsConverter"
+        android:id="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/inputText"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:hint="input" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputText"
+        android:layout_alignBottom="@+id/inputText"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignTop="@+id/inputText"
+        android:layout_toEndOf="@+id/inputText"
+        android:hint="output" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rG1"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputText"
+        android:layout_alignEnd="@+id/inputText">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fluid ounce"
+        android:id="@+id/rbtnFluid"
+        android:layout_below="@+id/inputText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cup"
+        android:id="@+id/rbtnCup"
+        android:layout_below="@+id/rbtnFluid"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pint"
+        android:id="@+id/rbtnPint"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_marginTop="30dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quart"
+        android:id="@+id/rbtnQuart"
+        android:layout_below="@+id/rbtnPint"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gallon"
+        android:id="@+id/rbtnGallon"
+        android:layout_below="@+id/rbtnQuart"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="millilitre"
+        android:id="@+id/rbtnMillilitre"
+        android:layout_below="@+id/rbtnGallon"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="litre"
+        android:id="@+id/rbtnLitre"
+        android:layout_below="@+id/rbtnMillilitre"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:checked="false" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rG2"
+        android:layout_above="@+id/btnConvert"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignTop="@+id/rG1"
+        android:layout_toEndOf="@+id/rG1">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fluid ounce"
+        android:id="@+id/rbtnFluid1"
+        android:layout_alignTop="@+id/rbtnFluid"
+        android:layout_alignEnd="@+id/outputText"
+        android:checked="false"
+        android:layout_marginTop="58dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cup"
+        android:id="@+id/rbtnCup1"
+        android:layout_alignTop="@+id/rbtnCup"
+        android:layout_alignEnd="@+id/rbtnFluid1"
+        android:checked="false"
+        android:layout_marginTop="27dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pint"
+        android:id="@+id/rbtnPint1"
+        android:layout_alignTop="@+id/rbtnPint"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:layout_marginTop="30dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quart"
+        android:id="@+id/rbtnQuart1"
+        android:layout_alignTop="@+id/rbtnQuart"
+        android:layout_alignEnd="@+id/rbtnPint1"
+        android:checked="false"
+        android:layout_marginTop="25dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gallon"
+        android:id="@+id/rbtnGallon1"
+        android:layout_alignTop="@+id/rbtnGallon"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:layout_marginTop="34dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="millilitre"
+        android:id="@+id/rbtnMillilitre1"
+        android:layout_alignTop="@+id/rbtnMillilitre"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:layout_marginTop="28dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="litre"
+        android:id="@+id/rbtnLitre1"
+        android:layout_alignTop="@+id/rbtnLitre"
+        android:layout_alignEnd="@+id/rbtnMillilitre1"
+        android:checked="false"
+        android:layout_marginTop="28dp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do Conversion"
+        android:id="@+id/btnConvert"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

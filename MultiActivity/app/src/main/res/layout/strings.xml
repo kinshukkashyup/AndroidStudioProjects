@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MultiActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter a Message</string>
+    <string name="Intent1btn">Send1</string>
+    <string name="Intent2btn">Send2</string>
+    <string name="title_display_message">DisplayMessageActivity</string>
+
+</resources>
