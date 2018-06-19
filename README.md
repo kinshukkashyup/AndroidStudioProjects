@@ -1,3 +1,3 @@
 # AndroidStudioProjects
 
-Simple liquid converter project.
+A bunch of android projects
