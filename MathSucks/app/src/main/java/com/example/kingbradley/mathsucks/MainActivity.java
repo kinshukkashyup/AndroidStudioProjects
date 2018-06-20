@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     double num2;
     String s;
     double result;
-    TextView  kID;
+
 
 
 
@@ -31,16 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        kID=(TextView) findViewById(R.id.kID);
-        kID.setText("K00400476");
-
-
-
-
-
-
-
-
+       
        totalTextView =(TextView) findViewById(R.id.totalTextView);
 
 
